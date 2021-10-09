@@ -2,12 +2,13 @@
 let  globalTaskData=[]
 taskContents = document.getElementById("taskContentsrow");
 colors=["bg-primary","bg-danger","bg-info","bg-dark","bg-warning","bg-success"]
-var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
  
 
 const addCard = () => {
+ var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     const newTaskDetails = {
         id: `${Date.now()}`,
         title: document.getElementById("taskTitle").value,
